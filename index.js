@@ -5,7 +5,7 @@ class TestApp extends React.Component {
   constructor(props) {
   	super(props);
   	this.state = {
-  	  name: this.props.initialName
+  	  name: this.props.initialName[2]
   	};
   }
   handleChange(e) {
@@ -28,7 +28,11 @@ class TestApp extends React.Component {
 }
 
 TestApp.defaultProps = {
-  initialName: "Charlie"
+  initialName: [
+    "Charlie",
+    "Max",
+    "Tyler"
+  ]
 };
 
 ReactDOM.render(<TestApp />, document.getElementById('root'));
