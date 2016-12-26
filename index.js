@@ -5,7 +5,7 @@ class TestApp extends React.Component {
   constructor(props) {
   	super(props);
   	this.state = {
-  	  name: this.props.initialName[0]
+  	  name: this.props.initialName[0] + " " + this.props.initialName[1]
   	};
   }
   handleChange(e) {
